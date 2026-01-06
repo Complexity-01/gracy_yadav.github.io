@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gracy Yadav - Data Science Portfolio</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
-    <style>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+   <style>
         * {
             margin: 0;
             padding: 0;
@@ -117,7 +118,9 @@
         .nav-links a {
             color: var(--primary);
             text-decoration: none;
-            font-weight: 500;
+            font-weight: 700;
+            /* font-size: 1.5rem; */
+            color:#3b82f6;
             position: relative;
             transition: color 0.3s;
         }
@@ -156,7 +159,7 @@
 
         .hero-content h1 {
             font-family: 'Playfair Display', serif;
-            font-size: 5rem;
+            font-size: 3rem;
             font-weight: 900;
             line-height: 1.1;
             color: var(--primary);
@@ -172,7 +175,7 @@
         }
 
         .hero-content p {
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             color: var(--text);
             margin-bottom: 2.5rem;
             line-height: 1.8;
@@ -193,12 +196,12 @@
 
         .cta-buttons {
             display: flex;
-            gap: 1.5rem;
+            gap: 1.6rem;
             animation: fadeInUp 0.8s ease-out 0.4s both;
         }
 
         .btn {
-            padding: 1rem 2.5rem;
+            padding: 1.2rem 2.8rem;
             border-radius: 50px;
             text-decoration: none;
             font-weight: 600;
@@ -217,7 +220,7 @@
         }
 
         .btn-primary:hover {
-            transform: translateY(-3px);
+            transform: translateY(-4px);
             box-shadow: 0 15px 40px rgba(102, 126, 234, 0.5);
         }
 
@@ -246,8 +249,8 @@
 
         .hero-image img {
             width: 50%;
-            max-width: 300px;
-            border-radius: 50px;
+            max-width: 700px;
+            border-radius: 50%;
             box-shadow: 0 30px 60px rgba(0, 0, 0, 0.2);
             position: relative;
             z-index: 2;
@@ -262,7 +265,7 @@
             max-width: 500px;
             height: 100%;
             background: var(--gradient);
-            border-radius: 50px;
+            border-radius: 50%;
             z-index: 1;
             animation: pulse 2s infinite;
         }
@@ -289,14 +292,16 @@
             text-align: center;
             margin-bottom: 1rem;
             color: var(--primary);
+            color:rgb(1, 15, 1);
         }
 
         .section-subtitle {
             text-align: center;
             color: var(--text);
-            font-size: 1.2rem;
+            color:slategray;
+            font-size: 1.5rem;
             margin-bottom: 4rem;
-            font-weight: 300;
+            font-weight: 500;
         }
 
         /* About Section */
@@ -341,7 +346,7 @@
         }
 
         .stat-number {
-            font-size: 3rem;
+            font-size: 2rem;
             font-weight: 900;
             background: var(--gradient);
             -webkit-background-clip: text;
@@ -388,7 +393,8 @@
         }
 
         .skill-category h3 {
-            font-size: 1.5rem;
+            color:black;
+            text-decoration:underline;
             margin-bottom: 1.5rem;
             font-weight: 700;
         }
@@ -406,6 +412,78 @@
         .skill-list li:last-child {
             border-bottom: none;
         }
+
+        .services {
+  padding: 60px 20px;
+  background-color: #c8d4e275;
+  font-family: 'Arial', sans-serif;
+  text-align: center;
+}
+
+.services .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.services h1 {
+  font-size:3.5rem;
+  margin-bottom: 40px;
+  color:black;
+  font-family: 'Times New Roman', Times, serif;
+}
+.services h3{
+    margin-bottom:40px;
+    font-size:1.4rem;
+    font-family:'Times New Roman', Times, serif;
+}
+
+.service-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.service-card {
+  background-color: #fff;
+  padding: 30px 20px;
+  width: 300px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+.service-card .icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+  color: #007BFF;
+}
+
+.service-card h3 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.service-card p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Responsive */
+@media (max-width: 960px) {
+  .service-cards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 
         /* Projects Section */
         #projects {
@@ -453,7 +531,6 @@
         }
 
         .project-header h3 {
-            font-size: 1.5rem;
             margin-bottom: 1rem;
             position: relative;
             z-index: 2;
@@ -470,7 +547,7 @@
 
         .project-body li {
             padding: 0.7rem 0;
-            padding-left: 1.5rem;
+            padding-left: 1.6rem;
             position: relative;
             color: var(--text);
             line-height: 1.6;
@@ -495,10 +572,11 @@
             padding: 0.4rem 1rem;
             background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
             border-radius: 20px;
-            font-size: 0.85rem;
-            font-weight: 600;
+            font-size: 1rem;
+            font-weight: 700;
             color: var(--primary);
         }
+        
 
         /* Education Section */
         #education {
@@ -532,7 +610,7 @@
         }
 
         .education-item h3 {
-            font-size: 1.8rem;
+            font-size: 1.6rem;
             margin-bottom: 0.5rem;
         }
 
@@ -626,6 +704,64 @@
             box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
         }
 
+        .contact-form {
+        max-width: 500px;
+        margin: 50px auto;
+        padding: 30px;
+        background-color: #cfc9ff;
+        border-radius: 10px;
+        box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+        font-family: Arial, sans-serif;
+        }
+
+       .contact-form h2 {
+        text-align: center;
+        font-size:2rem;
+        margin-bottom: 20px;
+        color: #333;
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+  color: #555;
+  font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #007BFF;
+  outline: none;
+}
+
+.contact-form button {
+  width: 100%;
+  padding: 15px;
+  background-color:rgb(245, 167, 23);
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #d19551;
+}
+
+
         /* Footer */
         footer {
             background: var(--primary);
@@ -708,7 +844,8 @@
         <div class="container">
             <div class="hero-content">
                 <h1>Hi, I'm <span class="highlight">Gracy Yadav</span></h1>
-                <p>Data Science Enthusiast | Machine Learning | AI | Turning Data into Actionable Insights</p>
+                <p>Data Scientist | Machine Learning Enthusiast | Data Analyst</p>
+                <p>Passionate about transforming raw data into actionable insights through statistical analysis,predictive modeling, and AI-driven solutions.</p>
                 <div class="cta-buttons">
                     <a href="#contact" class="btn btn-primary">Get In Touch</a>
                     <button onclick="downloadResume()" class="btn btn-secondary">Download Resume</button>
@@ -724,25 +861,25 @@
     <section id="about">
         <div class="container">
             <h2 class="section-title fade-in">About Me</h2>
-            <p class="section-subtitle fade-in">Passionate about transforming data into insights</p>
+            <p class="section-subtitle fade-in">Designing Solutions,Not Just Visuals</p>
             <div class="about-content">
                 <div class="about-text fade-in">
-                    <p>I am deeply interested in pursuing a career in data science, driven by my passion for working with data to uncover meaningful insights and solve real-world problems.</p>
+                    <p>I'm an aspiring Data Scientist with a strong foundation in Python, Machine Learning, and Data Analysis. My journey in data science is driven by a deep passion for transforming raw data into meaningful insights that can drive real-world impact</p>
                     <p>My curiosity lies in exploring how data can be transformed into actionable knowledge through statistical analysis, machine learning, and artificial intelligence. I am particularly motivated by the opportunity to work on projects involving data-driven decision-making, predictive modeling, and automation.</p>
-                    <p>With a strong inclination toward continuous learning, I aim to enhance my skills in programming, analytics, and visualization to contribute effectively to industries where data plays a pivotal role, such as technology, healthcare, finance, and business intelligence.</p>
+                    <p>My approach combines technical expertise with a curious mindset, always seeking to understand the "why" behind the data. I believe in continuous learning and staying updated with the latest developments in AI and Machine Learning.</p>
                 </div>
                 <div class="stats fade-in">
                     <div class="stat-card">
-                        <div class="stat-number">3+</div>
-                        <div class="stat-label">Projects</div>
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label">Complete Projects</div>
                     </div>
                     <div class="stat-card">
                         <div class="stat-number">1+</div>
-                        <div class="stat-label">Years Learning</div>
+                        <div class="stat-label">Years of Experience</div>
                     </div>
                     <div class="stat-card">
-                        <div class="stat-number">10+</div>
-                        <div class="stat-label">Technologies</div>
+                        <div class="stat-number">5+</div>
+                        <div class="stat-label">Tech Skills</div>
                     </div>
                 </div>
             </div>
@@ -774,10 +911,11 @@
                 <div class="skill-category fade-in">
                     <h3>Machine Learning</h3>
                     <ul class="skill-list">
-                        <li>Regression Analysis</li>
+                        <li>Regression </li>
                         <li>Classification</li>
                         <li>Clustering</li>
                         <li>Predictive Modeling</li>
+                        <li>EDA</li>
                     </ul>
                 </div>
                 <div class="skill-category fade-in">
@@ -802,11 +940,46 @@
         </div>
     </section>
 
+    <section class="services" id="services">
+  <div class="container">
+    <h1 class="section-title fade-in">Services</h1>
+    <h3 class="section-subtitle fade-in">Leveraging data science skills to deliver actionable insights and build intelligent solutions.</h3>
+    <div class="service-cards fade-in">
+      <div class="service-card fade-in">
+        <div class="icon">📊</div>
+        <h3>Data Analysis & EDA</h3>
+        <p>Extracting insights from structured datasets through exploratory data analysis and visulaization.</p>
+      </div>
+      <div class="service-card fade-in">
+        <div class="icon"><i class="fa-solid fa-brain"></i></div>
+        <h3>Machine Learning Models</h3>
+        <p>Building regression and classification models to solve real-world problems.</p>
+      </div>
+      <div class="service-card fade-in">
+        <div class="icon"><i class="fa-solid fa-chart-line"></i></div>
+        <h3>Predictive Analytics</h3>
+        <p>Data-driven forecasting and decision support for business intelligence.</p>
+      </div>
+       <div class="service-card fade-in">
+        <div class="icon"><i class="fa-solid fa-computer"></i></div>
+        <h3>Streamlit App Development</h3>
+        <p>Creating interactive ML and analytics web applications for data visualization.</p>
+      </div>
+      <div class="service-card fade-in">
+        <div class="icon"><i class="fa-solid fa-align-right"></i></div>
+        <h3>Dashboard Creation</h3>
+        <p>Business insights and reporting using Power BI and data visualization tools.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
     <!-- Projects Section -->
     <section id="projects">
         <div class="container">
             <h2 class="section-title fade-in">Featured Projects</h2>
-            <p class="section-subtitle fade-in">Showcasing my data science work</p>
+            <p class="section-subtitle fade-in">Digital Product Showcases</p>
             <div class="projects-grid">
                 <div class="project-card fade-in">
                     <div class="project-header">
@@ -940,6 +1113,23 @@
             </div>
         </div>
     </section>
+    
+<div class="contact-form fade-in">
+  <h2 class="section-title fade-in">Contact Me</h2>
+  <form action="#" method="post" class="section-subtitle fade-in">
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" placeholder="Your Name" required>
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" placeholder="abc@gmail.com" required>
+
+    <label for="message"> Your Message</label>
+    <textarea id="message" name="message" placeholder="Tell me about your project" rows="5" required></textarea>
+
+    <button type="submit">Send Message</button>
+  </form>
+</div>
+
 
     <!-- Footer -->
     <footer>
